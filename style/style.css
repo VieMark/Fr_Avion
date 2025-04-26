@@ -1,0 +1,314 @@
+/* Basic Resets & Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Выберите подходящий шрифт */
+    line-height: 1.6;
+    color: #2A254B; /* Основной цвет текста */
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4E4D93; /* Примерный цвет кнопки */
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #3a396d; /* Немного темнее при наведении */
+}
+
+.btn-secondary {
+    background-color: #F9F9F9; /* Светло-серый фон */
+    color: #2A254B;
+}
+.btn-secondary:hover {
+     background-color: #e9e9e9;
+}
+
+.btn-subscribe {
+    background-color: #fff;
+    color: #2A254B;
+    padding: 10px 20px;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    background-color: #2A254B; /* Темно-синий фон левой части */
+    color: #fff;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    margin-top: 40px; /* Отступ перед параграфом */
+    max-width: 450px; /* Ограничение ширины параграфа */
+    opacity: 0.8;
+}
+
+.hero-content .btn {
+    align-self: flex-start; /* Кнопка слева */
+    margin-top: 20px;
+}
+
+
+.hero-image {
+    flex: 1;
+    background-color: #A7C3C2; /* Светло-сине-зеленый фон правой части */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image img {
+   max-height: 500px; /* Ограничение высоты изображения */
+   width: auto;
+}
+
+
+/* New Ceramics Section */
+.new-ceramics {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.new-ceramics h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: left;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка */
+    gap: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.product-card img {
+    margin-bottom: 15px;
+    background-color: #f0f0f0; /* Фон-заглушка для изображений */
+    aspect-ratio: 1 / 1.2; /* Примерное соотношение сторон */
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Белый фон */
+    padding: 60px 0; /* Вертикальные отступы */
+}
+
+.about-content {
+    flex: 1;
+    padding: 0 40px; /* Отступы для текста */
+}
+.about-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.about-content p {
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+.about-content .btn {
+    margin-top: 10px;
+}
+
+.about-image {
+    flex: 1;
+    padding: 0 20px; /* Небольшой отступ для картинки */
+}
+.about-image img {
+    background-color: #f0f0f0; /* Фон-заглушка */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #2A254B;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.footer-column a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-form input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15); /* Полупрозрачный фон */
+    color: #fff;
+}
+.subscribe-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons span {
+    cursor: pointer; /* Добавьте ссылки и реальные иконки */
+}
+
+/* Адаптивность (простой пример) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-content, .hero-image {
+        padding: 40px 20px;
+    }
+     .about {
+        flex-direction: column-reverse; /* Картинка сверху на мобильных */
+        gap: 30px;
+        padding: 40px 20px;
+    }
+    .about-content, .about-image {
+        padding: 0;
+    }
+     .footer-grid {
+        grid-template-columns: 1fr; /* Колонки в один столбец */
+        text-align: center;
+    }
+    .subscribe-form {
+        justify-content: center;
+    }
+     .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
